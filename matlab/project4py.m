@@ -5,7 +5,7 @@ clc; clear; close all;
 file_path = "данныепроекта.xlsx";
 
 opts = detectImportOptions(file_path, 'VariableNamingRule','preserve');
-opts.DataRange = '2:100000';   % аналог header=1
+opts.DataRange = '2:100000';  
 T = readtable(file_path, opts);
 
 disp("Колонки, прочитанные из файла:");
